@@ -2,9 +2,9 @@
     font-family: 'Inter';
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
+body {
+    height: auto;
+    width: auto;
     margin: 0;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ body{
     max-width: 1000px;
 }
 
-.section-container{
+.section-container {
     width: auto;
     height: 100%;
     max-width: 700px;
@@ -42,6 +42,7 @@ body{
 .header-text {
     font-size: 1.5rem;
     width: auto;
+    margin-top: 3.5rem;
 }
 
 .body-text {
@@ -62,3 +63,44 @@ body{
     height: auto;
 }
 
+.list-container {
+    list-style-type: '✤';
+}
+
+.list-item {
+    padding-left: 10px;
+}
+
+.table-container {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    width: 100%;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-0lax {
+    text-align: left;
+    vertical-align: top
+}
