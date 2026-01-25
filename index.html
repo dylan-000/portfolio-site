@@ -1,30 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <!----TODO: Figure out how to center everything in the middle of the screen-->
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practice-website</title>
-  </head>
-  <body>
-    <div class="page-container">
+<!----TODO: Figure out how to center everything in the middle of the screen-->
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>practice-website</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="section-container">
       <div class="title-container">
-        <h1 class="title-text">Hello, My Name is Dylan Fisher!</h1>
+        <h1 class="title-text">Hello There!<br> My Name is Dylan!</h1>
       </div>
-      <div class="section-container">
-        <h1 class="header-text">About Me</h1>
-        <p class="body-text">
-          I'm a senior at Penn State Behrend and will graduate with my B.S in Computer Science in May 2026!
-          <br> I have worked on many different projects, ranging from Machine Learning research on Acoustic
-        </p>
+      <h1 class="header-text">About Me</h1>
+      <p class="body-text">
+        I'm a senior at Penn State Behrend and will graduate with my B.S in Computer Science in May 2026!
+        I have worked on many different projects, ranging from Machine Learning research on Acoustic signal
+        processing to full-stack enterprise systems in the industry. I love learning new things and
+        honing my developer skillset!
+      </p>
+      <h1 class="header-text">My Hobbies</h1>
+      <p class="body-text">
+        I have a very diverse set of hobbies that I like to do in my spare time. Some of which include:
+      <ul class="body-text">
+        <li>Hunting</li>
+        <li>Fishing</li>
+        <li>Learning new Programming Langauges</li>
+        <li>Exercising</li>
+        <li>Reading</li>
+        <li>Playing Video Games</li>
+        <li>Hiking</li>
+      </ul>
+      </p>
+      <p class="body-text">
+        Below, I have included some photos of me doing my favorite things. Here, you'll see that I like turkey hunting and hiking in Maine!
+      </p>
+      <div class="image-container">
+        <img class="body-image" src="/public/turkey_hunting.jpg"
+        alt="Author posing with turkey after successful turkey hunt." />
+        <img class="body-image" src="/public/dylan_looking.JPG" alt="Author looking over the mountains in Acadia National Park in Maine."/>
+        <img class="body-image" src="public/dylan_looking_withysky.JPG" alt="Author looking off to distance on mountain."/>
+        <img class="body-image" src="/public/Maine_Coast.JPG" alt="Picture of waves hitting the rocky coast of Maine."/>
       </div>
+      <h1 class="header-text">Education</h1>
+      <table>
+        <tr>
+          <th>School</th>
+          <th>GPA</th>
+        </tr>
+      </table>
     </div>
-  </body>
+  </div>
+</body>
 </html>
-
-
