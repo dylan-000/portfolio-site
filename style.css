@@ -1,5 +1,5 @@
 * {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     color: #EBD5AB;
     background-color: #1B211A;
 }
@@ -39,6 +39,24 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     width: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* Button to open the sidebar */
+.menu-btn {
+    background-color: #EBD5AB;
+    color: #1B211A;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.menu-btn:hover {
+    background-color: #d1b88e;
 }
 
 .header-text {
@@ -84,16 +102,7 @@ body {
     border-spacing: 0;
 }
 
-.tg td {
-    border-color: #EBD5AB;
-    border-style: solid;
-    border-width: 1px;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-}
-
-.tg th {
+.tg td, .tg th {
     border-color: #EBD5AB;
     border-style: solid;
     border-width: 1px;
@@ -104,5 +113,85 @@ body {
 
 .tg .tg-0lax {
     text-align: left;
-    vertical-align: top
+    vertical-align: top;
+}
+
+/* --- SIDEBAR & OVERLAY STYLES --- */
+
+/* The blurred overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+    backdrop-filter: blur(8px);           /* Apply the blur */
+    -webkit-backdrop-filter: blur(8px);   /* Safari support */
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* The sliding sidebar */
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -300px; /* Hide it off-screen to the right */
+    background-color: #242c22; /* Slightly lighter than page background for contrast */
+    overflow-x: hidden;
+    transition: right 0.4s ease;
+    padding-top: 60px;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.5);
+}
+
+.sidebar.open {
+    right: 0; /* Slide in */
+}
+
+.sidebar a {
+    padding: 12px 12px 12px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #EBD5AB;
+    display: block;
+    background-color: transparent;
+    transition: color 0.2s;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    padding: 0;
+}
+
+.sidebar-heading {
+    padding-left: 32px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.sidebar-divider {
+    border: 0;
+    height: 1px;
+    background-color: #EBD5AB;
+    opacity: 0.3;
+    margin: 20px 32px;
 }

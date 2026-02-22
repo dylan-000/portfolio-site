@@ -14,19 +14,49 @@
 </head>
 
 <body>
+  <script>
+    function toggleSidebar() {
+      // Toggles the classes that slide the menu in and fade the blur overlay
+      document.getElementById("mySidebar").classList.toggle("open");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+  </script>
+
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    
+    <h3 class="sidebar-heading">My Links</h3>
+    <a href="#" target="_blank">LinkedIn</a>
+    <a href="#" target="_blank">GitHub</a>
+    <a href="#" target="_blank">Resume</a>
+    
+    <hr class="sidebar-divider">
+    
+    <h3 class="sidebar-heading">Navigation</h3>
+    <a href="#about" onclick="toggleSidebar()">About Me</a>
+    <a href="#hobbies" onclick="toggleSidebar()">My Hobbies</a>
+    <a href="#education" onclick="toggleSidebar()">Education</a>
+  </div>
+
   <div class="page-container">
     <div class="section-container">
       <div class="title-container">
         <h1 class="title-text">Hello There!<br> My Name is Dylan!</h1>
+        <button class="menu-btn" onclick="toggleSidebar()">Menu & Links</button>
       </div>
-      <h1 class="header-text">About Me</h1>
+      
+      <h1 id="about" class="header-text">About Me</h1>
+    
       <p class="body-text">
         I'm a senior at Penn State Behrend and will graduate with my B.S in Computer Science in May 2026!
         I have worked on many different projects, ranging from Machine Learning research on Acoustic signal
         processing to full-stack enterprise systems in the industry. I love learning new things and I enjoy
         honing my developer skillset!
       </p>
-      <h1 class="header-text">My Hobbies</h1>
+      
+      <h1 id="hobbies" class="header-text">My Hobbies</h1>
       <p class="body-text">
         I have a very diverse set of hobbies that I like to do in my spare time. Some of which include:
       <ul class="body-text list-container">
@@ -43,6 +73,7 @@
         Below, I have included some photos of me doing my favorite things. Here, you'll see that I like turkey hunting
         and hiking in Maine!
       </p>
+      <br/>
       <div class="image-container">
         <img class="body-image" src="/public/turkey_hunting.jpg"
           alt="Author posing with turkey after successful turkey hunt." />
@@ -53,7 +84,8 @@
         <img class="body-image" src="/public/Maine_Coast.JPG"
           alt="Picture of waves hitting the rocky coast of Maine." />
       </div>
-      <h1 class="header-text">Education</h1>
+      
+      <h1 id="education" class="header-text">Education</h1>
       <p class="body-text">
         Here is some information about my education:
       </p>
