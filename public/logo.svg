@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 42 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-248.32468,-365.845797)">
+        <g transform="matrix(1,0,-0,1,8.788085,-10.321848)">
+            <circle cx="254.5" cy="385.5" r="1.5"/>
+        </g>
+        <g transform="matrix(1,0,-0,1,20.788085,-10.321848)">
+            <circle cx="254.5" cy="385.5" r="1.5"/>
+        </g>
+        <g transform="matrix(1,0,-0,1,42.788085,-9.321848)">
+            <g transform="matrix(19.166667,0,0,19.166667,231.899307,399.888478)">
+            </g>
+            <text x="220.399px" y="399.888px" style="font-family:'JetBrainsMonoNLNFM-Regular', 'JetBrainsMonoNL Nerd Font Mono', monospace;font-size:19.167px;">u</text>
+        </g>
+        <g transform="matrix(1,0,-0,1,42.788085,-25.321848)">
+            <g transform="matrix(19.166667,0,0,19.166667,231.899307,399.888478)">
+            </g>
+            <text x="220.399px" y="399.888px" style="font-family:'JetBrainsMonoNLNFM-Regular', 'JetBrainsMonoNL Nerd Font Mono', monospace;font-size:19.167px;">~</text>
+        </g>
+        <g transform="matrix(1,0,-0,1,23.788085,38.678152)">
+            <g transform="matrix(19.166667,0,0,19.166667,252.122974,361.582568)">
+            </g>
+            <text x="240.623px" y="361.583px" style="font-family:'JetBrainsMonoNLNFM-Regular', 'JetBrainsMonoNL Nerd Font Mono', monospace;font-size:19.167px;">-</text>
+        </g>
+        <g transform="matrix(1.457792,0,-0,1.289041,-109.616684,-91.649362)">
+            <g transform="matrix(22.083333,0,0,22.083333,257.130344,375.813664)">
+            </g>
+            <text x="243.88px" y="375.814px" style="font-family:'JetBrainsMonoNLNFM-Regular', 'JetBrainsMonoNL Nerd Font Mono', monospace;font-size:22.083px;">{</text>
+        </g>
+        <g transform="matrix(1.457792,0,-0,1.289041,-82.158078,-91.649362)">
+            <g transform="matrix(22.083333,0,0,22.083333,257.130344,375.813664)">
+            </g>
+            <text x="243.88px" y="375.814px" style="font-family:'JetBrainsMonoNLNFM-Regular', 'JetBrainsMonoNL Nerd Font Mono', monospace;font-size:22.083px;">}</text>
+        </g>
+    </g>
+</svg>

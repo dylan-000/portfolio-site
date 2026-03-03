@@ -49,87 +49,23 @@
   <div class="page-container">
     <div class="section-container">
       <div class="title-container">
-        <h1 class="title-text">Hello There!<br> My Name is Dylan!</h1>
-      </div>
-      
-      <h1 id="about" class="header-text">About Me</h1>
-    
-      <p class="body-text">
-        I'm a senior at Penn State Behrend and will graduate with my B.S in Computer Science in May 2026!
-        I have worked on many different projects, ranging from Machine Learning research on Acoustic signal
-        processing to full-stack enterprise systems in the industry. I love learning new things and I enjoy
-        honing my developer skillset!
-      </p>
-      
-      <h1 id="hobbies" class="header-text">My Hobbies</h1>
-      <p class="body-text">
-        I have a very diverse set of hobbies that I like to do in my spare time. Some of which include:
-      <ul class="body-text list-container">
-        <li class="list-item">Hunting</li>
-        <li class="list-item">Fishing</li>
-        <li class="list-item">Learning new Programming Langauges</li>
-        <li class="list-item">Exercising</li>
-        <li class="list-item">Reading</li>
-        <li class="list-item">Playing Video Games</li>
-        <li class="list-item">Hiking</li>
-      </ul>
-      </p>
-      <p class="body-text">
-        Below, I have included some photos of me doing my favorite things. Here, you'll see that I like turkey hunting
-        and hiking in Maine!
-      </p>
-      <br/>
-      <div class="carousel">
-        <button class="prev">&#10094;</button>
-        <div class="carousel-images">
-          <img src="/turkey_hunting.jpg" alt="Author posing with turkey after successful turkey hunt." />
-          <img src="/dylan_looking.JPG" alt="Author looking over the mountains in Acadia National Park in Maine." />
-          <img src="/dylan_looking_withysky.JPG" alt="Author looking off to distance on mountain." />
-          <img src="/Maine_Coast.JPG" alt="Picture of waves hitting the rocky coast of Maine." />
-        </div>
-        <button class="next">&#10095;</button>
+        <h1 class="title-text">Projects</h1>
       </div>
 
-      <h1 id="education" class="header-text">Education</h1>
-      <p class="body-text">
-        Here is some information about my education:
+      <h1 class="header-text">Senior Design Capstone Project</h1>
+      <p>
+        In this project, I worked with a team to develop a fully local AI research system 
+        for our senior design capstone client. Everything was deployed on linux server, courtesy of our school.
+        Read to find out more.
       </p>
-      <table class="tg table-container">
-        <thead>
-          <tr>
-            <th class="tg-0lax">School</th>
-            <th class="tg-0lax">Major</th>
-            <th class="tg-0lax">GPA</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="tg-0lax">Penn State Behrend</td>
-            <td class="tg-0lax">Computer Science</td>
-            <td class="tg-0lax">3.80</td>
-          </tr>
-        </tbody>
-      </table>
+
+      <h1 class="header-text">News Aggregation App</h1>
+      <p>
+        In this project, I worked on a team to create a mobile and web app for a unified .NET and express js backend.
+        The system aggregated tech news from various sources and rendered them into reader views for users. Read to find out more.
+      </p>
+
     </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      let index = 0;
-      const images = document.querySelectorAll('.carousel-images img');
-      function showImage(i) {
-        images.forEach((img, idx) => {
-          img.classList.toggle('active', idx === i);
-        });
-      }
-      document.querySelector('.carousel .prev').addEventListener('click', () => {
-        index = (index - 1 + images.length) % images.length;
-        showImage(index);
-      });
-      document.querySelector('.carousel .next').addEventListener('click', () => {
-        index = (index + 1) % images.length;
-        showImage(index);
-      });
-      showImage(index);
-    });
-  </script></body>
+</body>
 </html>
